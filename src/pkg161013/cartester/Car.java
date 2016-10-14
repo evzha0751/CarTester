@@ -1,34 +1,50 @@
 
 
 package pkg161013.cartester;
-
+/**
+ * Car Class 
+ */
 public class Car {
 
-    private String make,modle,color;
+    private String make,model,color;
     private int year,price,num;
     
-    
+ /**
+  * constructor
+  * pre: none
+  * post: values have been changed
+  */   
     public Car(){
         make="Audi";
-        modle="Q7";
+        model="Q7";
         year=2017;
         price=65200;
         color="Blue";
         num=3;
     }
     
+  /**
+  * constructor
+  * pre: 6 values
+  * post: values have been changed
+  */ 
     public Car(String ma,String mo,int ye,int pr,String co,int nu){
         make=ma;
-        modle=mo;
+        model=mo;
         year=ye;
         price=pr;
         color=co;
         num=nu;
     }
     
+  /**
+  * constructor
+  * pre: 3 values
+  * post: values have been changed
+  */
     public Car(String ma,String mo,int ye,int pr){
         make=ma;
-        modle=mo;
+        model=mo;
         year=ye;
         price=pr;
         color="Silver";
@@ -46,7 +62,7 @@ public class Car {
     
     public String toString(){
     String output = "Make: " + make + "\n";
-    output += "Modle: " + modle + "\n";
+    output += "Modle: " + model + "\n";
     output += "Year: " + year + "\n";
     output += "Price: " + price + "\n";
     output += "Color: " + color + "\n";
